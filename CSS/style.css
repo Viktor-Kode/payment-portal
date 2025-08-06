@@ -4,14 +4,18 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    width: 100vw;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    overflow-x: hidden;
-    max-width: 100vw;
+    /* overflow-x: hidden; */
+    width: 100vw;
+    height: 100%;
 }
 header{
-    width: 100vw;
+    max-width: 100%;
 }
 nav{
     background-color: #ffffff;
