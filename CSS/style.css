@@ -1,23 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     width: 100vw;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     width: 100vw;
     height: 100%;
 }
-header{
+
+header {
     max-width: 100%;
 }
-nav{
+
+nav {
     background-color: #ffffff;
     color: #fff;
     padding: 10px 20px;
@@ -25,42 +29,49 @@ nav{
     border-bottom: #33333325 solid;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 80px;
 }
-nav #logo{
+
+nav #logo {
     font-size: 24px;
     font-weight: bold;
     color: blue;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #000;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: blue;
     padding: 10px;
     border-radius: 5px;
 }
-nav ul li a.active{
+
+nav ul li a.active {
     color: blue;
     padding: 10px;
     border-radius: 5px;
 }
-nav #btn #registerbtn{
+
+nav #btn #registerbtn {
     background-color: blue;
     color: #fff;
     border: none;
@@ -69,14 +80,17 @@ nav #btn #registerbtn{
     cursor: pointer;
     margin-left: 20px;
     font-size: 16px;
-    transition: background-color 0.3s ease;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-nav #btn #registerbtn:hover{
+
+nav #btn #registerbtn:hover {
     background-color: #fff;
     color: blue;
     border: 1px solid blue;
 }
-nav #btn #loginbtn{
+
+nav #btn #loginbtn {
     background-color: white;
     color: #000;
     border: none;
@@ -90,25 +104,28 @@ nav #btn #loginbtn{
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-nav #btn #loginbtn:hover{
+
+nav #btn #loginbtn:hover {
     background-color: blue;
     color: #fff;
     border: 1px solid blue;
 }
 
 
-#menu-icon{
+#menu-icon {
     display: none;
 }
+
 /* Banner Section */
-#web-Banner{
+#web-Banner {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     background-color: #fff;
     height: 95vh;
 }
-#web-Banner #banner-info{
+
+#web-Banner #banner-info {
     max-width: 600px;
     padding-top: 170px;
     padding-bottom: 50px;
@@ -116,20 +133,23 @@ nav #btn #loginbtn:hover{
     text-align: center;
     text-align: left;
 }
-#web-Banner h1{
+
+#web-Banner h1 {
     font-size: 36px;
     color: #333;
     line-height: 1.3;
     word-spacing: 2px;
     margin-bottom: 20px;
 }
-#web-Banner p{
+
+#web-Banner p {
     font-size: 18px;
     color: #666;
     max-width: 600px;
     margin-bottom: 30px;
 }
-#web-Banner button{
+
+#web-Banner button {
     background-color: blue;
     color: #fff;
     border: none;
@@ -139,12 +159,14 @@ nav #btn #loginbtn:hover{
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-#web-Banner button:hover{
+
+#web-Banner button:hover {
     background-color: #fff;
     color: blue;
     border: 1px solid blue;
 }
-#web-Banner #banner-img img{
+
+#web-Banner #banner-img img {
     width: 600px;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -152,6 +174,7 @@ nav #btn #loginbtn:hover{
     height: 600px;
     object-fit: cover;
 }
+
 /* ========== Responsive Design ========== */
 
 /* Tablets (≤ 1024px) */
@@ -174,14 +197,15 @@ nav #btn #loginbtn:hover{
         height: auto;
         padding: 0;
     }
-    #menu-icon{
+
+    #menu-icon {
         display: block;
         width: 40px;
         height: auto;
         margin: 0%;
     }
 
-    
+
 
     nav ul {
         position: absolute;
@@ -189,36 +213,42 @@ nav #btn #loginbtn:hover{
         left: -100%;
         background-color: blue;
         z-index: 1000;
-        height:60%;
+        height: 60%;
         width: 100%;
         padding: 30px;
         transition: ease-in-out .3s;
         display: block;
     }
-    .activateNavlinks{
-       left: 0; 
+
+    .activateNavlinks {
+        left: 0;
     }
-    nav ul li a:hover{
-        color: #1f93ff;
-    }
-    nav ul li a.active{
+
+    nav ul li a:hover {
         color: #1f93ff;
     }
 
-    nav ul li a{
+    nav ul li a.active {
+        color: #1f93ff;
+    }
+
+    nav ul li a {
         color: white;
     }
+
     nav ul li {
         display: block;
         margin: 10px 0;
         text-align: center;
         padding-top: 20px;
-         font-size: 29px;
+        font-size: 29px;
 
     }
-      nav #btn #registerbtn{
+
+    nav #btn #registerbtn {
         display: none;
     }
+
     nav #btn #loginbtn {
         padding: 12px 20px;
         font-size: 14px;
@@ -232,7 +262,7 @@ nav #btn #loginbtn:hover{
 /* Phones (≤ 768px) */
 @media (max-width: 768px) {
 
-    
+
     #web-Banner h1 {
         font-size: 28px;
     }
@@ -245,14 +275,16 @@ nav #btn #loginbtn:hover{
         width: 80%;
     }
 
-    nav #btn #registerbtn{
+    nav #btn #registerbtn {
         display: none;
     }
+
     nav #btn #loginbtn {
         padding: 12px 20px;
         font-size: 14px;
         margin-left: 90px;
     }
+    
 }
 
 /* Small Phones (≤ 480px) */
@@ -282,3 +314,80 @@ nav #btn #loginbtn:hover{
         font-size: 14px;
     }
 }
+#offers{
+    margin-bottom: 30px;
+}
+#offers h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#offer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.offer-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    cursor: pointer;
+}
+.offer-box:hover{
+    box-shadow: inset 0 2px 4px rgba(77, 71, 71, 0.1);
+    transform: translateY(-2px);
+    transition: all .3s;
+}
+.offer-box img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+#offer-info {
+    margin-top: 20px;
+}
+.offer-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: blue;
+}
+.offer-box p {
+    font-size: 16px;
+    color: #666;
+}
+@media (max-width: 768px) {
+    #offers h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #offer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-box {
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .offer-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .offer-box h2 {
+        font-size: 20px;
+    }
+
+    .offer-box p {
+        font-size: 14px;
+    }
+}
+
