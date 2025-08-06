@@ -10,7 +10,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    /* overflow-x: hidden; */
+    overflow-x: hidden; 
     width: 100vw;
     height: 100%;
 }
@@ -22,6 +22,7 @@ nav{
     color: #fff;
     padding: 10px 20px;
     display: flex;
+    border-bottom: #33333325 solid;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -31,6 +32,13 @@ nav #logo{
     font-size: 24px;
     font-weight: bold;
     color: blue;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 nav ul li{
     display: inline-block;
@@ -181,19 +189,20 @@ nav #btn #loginbtn:hover{
         left: -100%;
         background-color: blue;
         z-index: 1000;
-        height:50%;
+        height:60%;
         width: 100%;
         padding: 30px;
         transition: ease-in-out .3s;
+        display: block;
     }
     .activateNavlinks{
        left: 0; 
     }
     nav ul li a:hover{
-        color: #000;
+        color: #1f93ff;
     }
     nav ul li a.active{
-        color: #000;
+        color: #1f93ff;
     }
 
     nav ul li a{
@@ -203,9 +212,19 @@ nav #btn #loginbtn:hover{
         display: block;
         margin: 10px 0;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 20px;
          font-size: 29px;
 
+    }
+      nav #btn #registerbtn{
+        display: none;
+    }
+    nav #btn #loginbtn {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-left: 90px;
+        width: 120px;
+        margin-top: 30px;
     }
 
 }
@@ -226,11 +245,13 @@ nav #btn #loginbtn:hover{
         width: 80%;
     }
 
-    nav #btn #registerbtn,
+    nav #btn #registerbtn{
+        display: none;
+    }
     nav #btn #loginbtn {
         padding: 12px 20px;
         font-size: 14px;
-        margin-left: 10px;
+        margin-left: 90px;
     }
 }
 
