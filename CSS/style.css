@@ -8,6 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     overflow-x: hidden;
+    width: 100%;
 }
 nav{
     background-color: #ffffff;
@@ -162,8 +163,10 @@ nav #btn #loginbtn:hover{
         display: block;
         width: 40px;
         height: auto;
+        margin: 0%;
     }
 
+    
 
     nav ul {
         position: absolute;
@@ -198,9 +201,6 @@ nav #btn #loginbtn:hover{
 
     }
 
-    nav #btn {
-        margin-top: 10px;
-    }
 }
 
 /* Phones (≤ 768px) */
