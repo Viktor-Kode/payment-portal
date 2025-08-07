@@ -16,10 +16,10 @@
                 <h1>logo</h1>
             </div>
             <ul id="navlinks">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#" >Home</a></li>
+                <li><a href="#offers">Services</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
                 <div id="btn">
                     <button id="loginbtn">Login</button>
                     <button id="registerbtn">Register</button>
@@ -44,32 +44,84 @@
 
 
     <article id="offers">
-        <h1 data-aos="fade-up-down" style="text-align: center; margin-top: 30px; font-size: 40px; text-transform: uppercase;">Our <span
+        <h1 data-aos="fade-up-down"
+            style="text-align: center; margin-top: 30px; font-size: 40px; text-transform: uppercase;">Our <span
                 style="color: blue;">Offer</span></h1>
-                <div id="offer-container" data-aos="fade-up-down">
-                    <div class="offer-box">
-                        <img src="IMAGES/payment.png" alt="">
-                        <div id="box-info">
-                            <h2>Easy Online Payments</h2>
-                            <p>Pay your hostel and departmental dues anytime, anywhere using secure online methods.</p>
-                        </div>
-                    </div>
-                    <div class="offer-box">
-                        <img src="IMAGES/envelope.png" alt="">
-                        <div id="box-info">
-                            <h2>Instant Email Receipts</h2>
-                            <p> Automatically receive detailed PDF receipts in your email after each successful payment.</p>
-                        </div>
-                    </div>
-                    <div class="offer-box">
-                        <img src="IMAGES/lock.png" alt="">
-                        <div id="box-info">
-                            <h2> Secure & Reliable</h2>
-                            <p>   Built with modern encryption and verified gateways to keep your data and payments safe.</p>
-                        </div>
-                    </div>
+        <div id="offer-container" data-aos="fade-up-down">
+            <div class="offer-box">
+                <img src="IMAGES/payment.png" alt="">
+                <div id="box-info">
+                    <h2>Easy Online Payments</h2>
+                    <p>Pay your hostel and departmental dues anytime, anywhere using secure online methods.</p>
                 </div>
+            </div>
+            <div class="offer-box">
+                <img src="IMAGES/envelope.png" alt="">
+                <div id="box-info">
+                    <h2>Instant Email Receipts</h2>
+                    <p> Automatically receive detailed PDF receipts in your email after each successful payment.</p>
+                </div>
+            </div>
+            <div class="offer-box">
+                <img src="IMAGES/lock.png" alt="">
+                <div id="box-info">
+                    <h2> Secure & Reliable</h2>
+                    <p> Built with modern encryption and verified gateways to keep your data and payments safe.</p>
+                </div>
+            </div>
+        </div>
     </article>
+
+    <article id="about-us" data-aos="fade-up-down">
+
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>This platform was built to make hostel and departmental dues payment easier, faster, and completely
+                    paperless.
+                    We believe students should be able to complete their payments in minutes without stress, while the
+                    school can track and manage transactions securely through an admin dashboard.
+                    Our mission is to bridge the gap between convenience and accountability in school payment systems.
+                </p>
+            </div>
+        </div>
+
+
+    </article>
+
+    <section data-aos="fade-up-down" id="contact" style="background-color: black; color: white;">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or issues with payment, feel free to reach out to us.</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-container">
+        <h3>Creative Spectrum</h3>
+        <p>Empowering you with design, development, and digital creativity.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about-us">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">© 2025 Creative Spectrum. All rights reserved.</p>
+    </div>
+</footer>
+
 
     <script src="JAVASCRIPT/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
