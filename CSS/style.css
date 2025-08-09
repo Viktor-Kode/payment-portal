@@ -151,7 +151,7 @@ nav #btn #loginbtn:hover {
     margin-bottom: 30px;
 }
 
-#web-Banner button {
+#web-Banner #web-Banner-Btn {
     background-color: blue;
     color: #fff;
     border: none;
