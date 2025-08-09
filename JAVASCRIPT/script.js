@@ -13,3 +13,9 @@ links.forEach(link => {
         navlinks.classList.remove('activateNavlinks');
     });
 });
+function loginPage(){
+    window.location.href ='../admin/login.html'
+}
+function registerPage(){
+    window.location.href ='../admin/register.html'
+}

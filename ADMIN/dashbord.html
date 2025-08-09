@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashBoard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+  <!-- Header / Logo Bar -->
+  <div id="logo" class="flex justify-between items-center border-solid p-4 bg-black">
+    <h1 class="text-white text-lg">Logo</h1>
+    <img src="../IMAGES/menu.png" id="menu" class="w-10 h-10 px-2 rounded-full md:hidden" alt="Menu" />
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div class="flex flex-col md:flex-row">
+    
+    <!-- Sidebar Navigation -->
+    <nav id="dash" class="bg-blue-900 w-full md:w-[25%] h-auto md:h-[100vh] hidden md:block">
+      <div class="navsection">
+        <ul class="mt-6 text-center">
+          <li><a href="#" class="text-white block py-2">Dashboard</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="#" class="text-white block py-2">Profile</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="#" class="text-white block py-2">Settings</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="#" class="text-white block py-2">Transactions</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="#" class="text-white block py-2">Make Payments</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="#" class="text-white block py-2">Support / Help</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+          <li><a href="login.html" class="text-white block py-2">Logout</a></li>
+          <div class="line h-0.5 mt-3 mb-3 bg-blue-300"></div>
+        </ul>
+        <p class="text-gray-400 mt-6 text-center">@copyright 2025</p>
+      </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div id="maindashboard" class="w-full p-6">
+      <h1 id="welcomDisplay" class="text-white text-2xl md:text-3xl mb-2">Welcome</h1>
+      <p id="displaymatricnumber" class="text-gray-400">Matric Number: </p>
+      <div id="dasboard-info" class="mt-6">
+        <!-- Additional dashboard info goes here -->
+      </div>
+      <div id="board" class="relative bg-black border border-white rounded-md p-4  max-w-sm md:max-w-md lg:max-w-lg w-full shadow-md">
+  <h1 class="text-white text-xl md:text-2xl mb-2">Amount:</h1>
+  <h3 class="text-white text-2xl md:text-3xl font-semibold mb-12">₦ 99,999,999</h3>
+
+  <button class="absolute bottom-4 right-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-md transition duration-300 ease-in-out">
+    + Add Money
+  </button>
+</div>
+<div id="displayHistory" class="bg-blue-400 mt-6 border rounded-md p-4 sm:p-6 max-w-full sm:max-w-xl lg:max-w-3xl mx-auto shadow-md">
+  <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold pl-2 sm:pl-4 lg:pl-8 pt-2 sm:pt-4">Transaction History:</h2>
+  <p class="text-center text-lg sm:text-xl lg:text-2xl pb-2 sm:pb-3">No Transaction Made Yet</p>
+</div>
+
+
+  <div id="displayDues">
+      <div id="containner">
+
+
+      </div>
+  </div>
+
+    </div>
+    
+  </div>
+
+  <!-- Script -->
+  <script>
+    let loggedinUser = JSON.parse(localStorage.getItem('loggedUser')) || { name: 'User', matric_number: 'N/A' };
+    document.getElementById('welcomDisplay').innerHTML = `Welcome ${loggedinUser.name},`;
+    document.getElementById('displaymatricnumber').innerHTML = `Matric Number: ${loggedinUser.matric_number}`;
+
+    let menu = document.getElementById('menu');
+    let sidebar = document.getElementById('dash');
+
+    menu.addEventListener('click', () => {
+      sidebar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

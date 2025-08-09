@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Hostel Dues</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <section id="login-form">
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="logForm" method="post">
+        <input type="text" name="matric_number" placeholder="Matric Number" id="matric_number" required>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+
+        <button type="submit">Login</button>
+        <p style="margin-top: 15px;">Don't have an account? <a href="register.html">Register</a></p>
+        <h2 style="color: red;" id="displaylogError"></h2>
+      </form>
+    </div>
+  </section>
+<script>
+        document.getElementById('logForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            let matric_number = document.getElementById('matric_number').value;
+            let password = document.getElementById('password').value;
+
+            let storedUser = JSON.parse(localStorage.getItem('user'));
+
+            if (storedUser && matric_number === storedUser.matric_number && storedUser && password === storedUser.password ) {
+                localStorage.setItem('loggedUser', JSON.stringify(storedUser));
+                window.location.href ='dashbord.html'
+            }else{
+                document.getElementById('displaylogError').innerHTML ='incorrect password or matric number';
+            }
+
+
+        })
+  </script>
+</body>
+</html>

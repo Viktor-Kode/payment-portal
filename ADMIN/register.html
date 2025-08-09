@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Hostel Dues</title>
+  <link rel="stylesheet" href="../CSS/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+
+  <section id="register-form">
+    <div class="form-container">
+      <h2>REGISTER</h2>
+      <form id="regForm" method="post">
+        <input type="text" id="name" name="full_name" placeholder="Full Name" required>
+        <input type="text" id="matric_number" name="matric_number" placeholder="Matric Number" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="password" reaquired>
+        <input type="password" id="conpassword" placeholder="Confirm password" reaquired>
+        <button type="submit">Submit</button>
+        <a href="login.html" >Already have an account</a>
+        <h2 id="displayError" style="color: red;"></h2>
+      </form>
+    </div>
+  </section>
+  <script>
+        document.getElementById('regForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let matric_number = document.getElementById('matric_number').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirmPassword = document.getElementById('conpassword').value;
+
+            if (password === confirmPassword) {
+                let user = {name, matric_number, email, password};
+                localStorage.setItem('user', JSON.stringify(user));
+                alert('Registrstion successful');
+                window.location.href ='login.html';
+            }else{
+                document.getElementById('displayError').innerHTML = 'password does not match'
+            }
+        })
+  </script>
+</body>
+</html>
